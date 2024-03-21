@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ *{
+margin:0;
+  box-sizing: border-box;
+  scroll-behavior:smooth;
+}
+header {
+    background-color:#1e2a35;
+    width: 100%;
+    position: fixed;/*when we scroll heather stays in place*/
+    z-index:999 ;/*we give it a high number allows heather to always be the most prominant in a page*/
+    display: flex;
+    justify-content: space-between;/*allows the elements of the heather to be separated*/
+    align-items: center;
+    padding:10px 200px;/*when we only use this and two values first value is for top and bottom and second value for right and left*/
+}
+.body{
+  background-color: #1e2a35;
+}
+
+.info img{
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+.photo img{
+  border: 3px solid #03fab3;
+  border-radius: 50%;
+  
+  background: linear-gradient(#03fab3, #94aaa4);
+ 
+}
+
+.photo img:hover{
+  transform:scale(1.1);
+  transition: transform 0.5s ease;
+  box-shadow: 0 0 35px #3eb56980;
+}
+.logo{
+text-decoration: none;
+color: #03fab3;
+font-style: italic;
+font-family: "Michroma", sans-serif;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 1.8em;
+}
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navigation a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5 em;
+  font-weight: 500;
+  padding-left: 30px;
+  font-family: "Michroma", sans-serif;
+ 
+
+}
+
+.navigation a:hover{
+  color:#236a56;
+  text-shadow: 0 0 45px #db6adb80;
+}
+section{
+  padding: 100px 200px;
+}
+.main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #1e2a35;
+  background-size: cover;
+  background-position:center ;
+  background-attachment: fixed;
+/*KEEPS THE BACKGROUND FIXED S WE MOVE GOOD FOR STYLING*/
+} 
+.main h2{
+  color:#ffffff;
+  font: size 2,5em ;
+  font-weight: 500;
+  font-family: "Michroma", sans-serif;
+  font-style: italic;
+}
+.main h2 span{
+  color:#f9faf6;
+  font-size:3em ;
+  font-weight: 600;
+  font-family: "Michroma", sans-serif;
+  display: inline-block;
+  margin-top:10px ;
+  margin-left :20px;
+  text-shadow: 2px 2px 4px #494646;
+}
+.main a:hover{
+  box-shadow: 0 0 35px #1c5545;;
+}
+.main h3 {
+  color:#f9faf7;
+  font-size:1em ;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top:10px ;
+  margin-bottom:30px ;
+  font-family: "Michroma", sans-serif;
+  padding-right: 100px;
+
+}
+.main-button {
+  color: #ffffff;
+  background-color: #236a56;
+  text-decoration: none;
+  font-size: 1.1em;
+  font: weight 600 ;
+  display:inline-block;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  font-family: "Michroma", sans-serif;
+  font-size: large 2em;
+  transition:0.7s ease-out;/*we controll the timing of the transition we use it in here not in hover place*/
+}
+.main-button:hover{
+  background-color: #03fab3;
+  transform:scale(1.1);/*this will change for x and y basically it makes it possible to work with 1.1 timesit's size so basically 10% begger*/
+  /*if we use diff value for x and y it won't be a good style will look a bit odd*/
+  
+}
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.social_icons:hover .first svg,
+.social_icons:hover .second svg,
+.social_icons:hover .third svg,
+.social_icons:hover .fourth svg {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in;
+}
+
+
+
+.social_icons{
+  color: #faf9f9;
+  font-size: 1.7em;
+  left: 3rem;
+  position: fixed;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  color:#236a56;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+  font-family: "Michroma", sans-serif;
+}
+.title h2:hover{
+  color:#03fab3;
+  text-shadow: 0 0 45px #175241;
+}
+.projects-title :hover{
+text-shadow: #03fab3;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  font-family: "Michroma", sans-serif;
+}
+
+.card {
+  background-color: #27303c;
+  width: 21.25em;
+  box-shadow:0 5px 25px  rgba(1 1 1/15%);
+  border-radius: 10px;
+  padding :25px;
+  margin: 15px; 
+  transition: 0.7s ease-out;
+  font-family: "Michroma", sans-serif;
+}
+.cards{
+  background-color: #1e2a35;
+}
+
+
+.card:hover{
+  transform:scale(1.1);
+  box-shadow: 0 5px 25px #236a56;
+  
+}
+.cards p{
+  font-size:15px;
+}
+
+.icon{
+  color:#03fab3;
+  font-size: 8em;
+  text-align: center;
+  font-family: "Michroma", sans-serif;
+}
+.info h3{
+  color:rgb(255, 253, 253) ;
+  font-size: 1900;
+  margin: 10px;
+  font-family: "Michroma", sans-serif;
+}
+.info{
+  text-align: center;
+  font-family: "Michroma", sans-serif;
+  font-size: large;
+  
+}
+.section {
+  height: 600px; /* Set the height to 600 pixels */
+}
+.infos{
+  display: flex;
+  flex-direction: row;
+  gap: 19px;
+  align-items: center;
+}
+.infos.icon:hover{
+  transform:scale(1.1);
+  transition: transform 0.5s ease-in;
+}
+
+.info{
+  color: #f9faf7;
+}
+.card.icon{
+  display: grid;
+}
+.projects{
+  background-color:#1e2a35;
+}
+.projects.content{
+  margin-top: 30px;
+}
+.icon-container.infos.icon{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Adjust as needed */
+  grid-gap: 10px;
+  font-size: 10px;
+}
+.projects.card{
+  background-color: #f6fff1;
+  border: 1px solid white;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin:20px;
+  transition:0.7s ease;
+  display: flex;
+  justify-content: center;
+  flex-direction: row ;
+  flex-wrap: wrap;
+
+}
+.projects.card:hover{
+  transform:scale(1.1);
+}
+.projects.card:hover.project-image{
+  opacity: 0.9;
+}
+.card img {
+  max-width: 100%;
+  height: auto;}
+
+.projects-info{
+  padding: 1em;
+}
+.projects-category{
+  font-size: 0.8 em;
+  color:black;
+}
+.projects-title{
+  display: flex;
+  justify-content: space-between;       /*Allowsspace btwn parent and child elements*/
+   font-weight: 800;
+   margin-top: 10px;
+}
+.more-details{
+  text-decoration: none;
+  color: #03fab3;
+ 
+}
+
+.more-details:hover{
+  color: #03fab3;
+  text-decoration: none;
+}
+
+.strong{ 
+  font-size: 0.8em;
+ 
+}
+
+.contacts.icon{
+  font-size: 4.5 em;
+}
+.contacts.info h3{
+  color: rgb(255, 249, 249);
+}
+.contacts.info{
+  font-size: 1.5em;
+}
+
+.footer{
+  background-color: #1e2a35;
+  color: #f6fff1;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Michroma", sans-serif;
+}
+.footer-title{
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.footer-title span{
+  color:#236a56;
+}
+.footer.social_icons a{
+  font-size: 1.3em;
+  padding: 0 12px 0 0;/*SENS DE L HORLOGE*/
+}
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.formulaire {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+.formulaire .cards{
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.formulaire h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  background-color: #236a56;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#0f3e30;
+}
+
+.info.svg-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media(max-width:1023px){
+  header{
+    padding:12px 20px;
+
+  }
+  .navigation{
+    padding-left: 10px;
+
+  }
+  .title{
+    font-size: .8em;
+  }
+  .section{
+    padding: 80 px  20px;
+  }
+  .main-content h2{
+    font-size: 1.6em;
+  }
+  .main-content{
+    font-size: 1.6em;
+  }
+  .content{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width:641px){
+body{
+  font-size:0.8em;
+}
+.main-content h2{
+  font-size:0.8em;
+}
+.main-content h3{
+  font-size:1.4em;
+}
+}
+@media(max-width:300px){
+  body{
+    font-size:10px;
+  }
+
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.infos.icon {
+  overflow: hidden;
+  padding: 60px 0;
+  
+  white-space: nowrap;
+  position: relative;
+}
+
+.infos.icon:before,
+.infos.icon:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.infos .icon:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.infos .icon:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.infos .icon:hover .icon-container.infos.icon-slide {
+  animation-play-state: paused;
+}
+
+.infos .icon-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+.infos.icon {
+  height: 50px;
+  margin: 0 40px;
+}
